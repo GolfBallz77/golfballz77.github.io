@@ -1,0 +1,85 @@
+body {
+  background-color: #000000;
+}
+
+h1 {
+  color: #874108;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+  color: #984909;
+}
+
+h4 {
+  color: #874108;
+  text-align: center;
+}
+
+button {
+  text-align: center;
+}
+
+iframe {
+  text-align: center;
+}
+.title {
+  text-align: center;
+}
+
+/* Common styles for both torches */
+.leftTorch, .rightTorch {
+  position: fixed;   /* keeps torches visible when scrolling */
+  top: 120px;        /* adjust to align with your title */
+  z-index: 1000;     /* ensures they stay above most elements */
+}
+
+/* Left torch */
+.leftTorch {
+  left: 50px;        /* distance from the left edge */
+}
+
+/* Right torch */
+.rightTorch {
+  right: 50px;       /* distance from the right edge */
+}
+
+/* Torch GIF styling */
+.leftTorch img,
+.rightTorch img {
+  width: 100px;      /* adjust to match your layout */
+  height: auto;
+  display: block;    /* removes extra space below image */
+  animation: flicker 1.5s infinite alternate;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+.warning {
+  text-align: center;
+  color: red;
+}
